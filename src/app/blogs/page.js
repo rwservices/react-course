@@ -26,6 +26,10 @@ const Blogs = () => {
         setVisibleCount(prevCount => prevCount + 10);
     }
 
+    const loadLessBlogs = () => {
+        setVisibleCount(prevCount => Math.max(prevCount - 10, 10));
+    }
+
     return (
         <section className="all-blogs">
             <div className="container">
@@ -48,7 +52,12 @@ const Blogs = () => {
                         </div>
                     ))}
                     <div className="btn-wrap">
-                        <button onClick={loadMoreBlogs} className="btn-primary">Load More</button>
+                        {visibleCount < blogs.length && (
+                            <button onClick={loadMoreBlogs} className="btn-primary">Load More</button>
+                        )}
+                        {visibleCount > 10 && (
+                            <button onClick={loadLessBlogs} className="btn-secondary">Load Less</button>
+                        )}
                     </div>
                 </div>
             </div>

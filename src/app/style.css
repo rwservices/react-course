@@ -82,7 +82,7 @@ a:hover{
   color: var(--hover-color);
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary{
   border: none;
   background: var(--accent-color);
   color: var(--white);
@@ -90,10 +90,19 @@ a:hover{
   cursor: pointer;
   font-size: 18px;
   transition: all 0.3s linear 0s;
+  margin-right: 20px;
 }
 
 .btn-primary:hover{
   color: var(--white);
+  background: var(--hover-color);
+}
+
+.btn-secondary {
+  background: var(--primary);
+}
+
+.btn-secondary:hover {
   background: var(--hover-color);
 }
 
