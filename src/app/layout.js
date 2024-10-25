@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={nunito.className}>
         <Header />
-        <main>
+        <main className='bg-background  dark:bg-gray-900 min-h-screen'>
           {children}
         </main>
         <Footer />
