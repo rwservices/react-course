@@ -1,3 +1,5 @@
+vi ~/.bashrc  .zshrc ~/.gitbash terminal settings
+
 git comands to paste in bash or respective terminal
 alias gl='git pull'
 alias gp='git push'
