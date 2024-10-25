@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+const colors = require('tailwindcss/colors')
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -9,6 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        primary:{...colors.skyblue},
+        secondary: '#0891b2',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
