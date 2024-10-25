@@ -1,4 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+git comands to paste in bash or respective terminal
+alias gl='git pull'
+alias gp='git push'
+alias gs='git status'
+alias gb='git branch'
+alias gco='git checkout'
+alias gcb='git checkout -b'
+alias gd='git diff'
+alias ga='git add'
+alias gc='git commit'
+alias gcm='git commit -m'
 
 ## Getting Started
 
