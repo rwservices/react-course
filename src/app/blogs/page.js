@@ -29,7 +29,7 @@ const Blogs = () => {
     return (
         <section className="all-blogs">
             <div className="container">
-                <header className="entry-header">
+                <header className="entry-header bg-teal-500 ">
                     <h2>Here you can find a list of dummy blogs</h2>
                 </header>
                 <div className="blog-list-wrap">
