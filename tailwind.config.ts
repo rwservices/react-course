@@ -9,8 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary:{...colors.blue,DEFAULT:colors.blue[500]},
-        secondary: '#0891b2',
+        primary:{
+          ...colors.red,
+          DEFAULT:colors.teal[500],
+          300:'green'
+        },
+        secondary: {
+          ...colors.voilet,
+          50:'#fb923c',
+          100:'#4ade80',
+          200:'green',
+          300:'green'
+        },
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
